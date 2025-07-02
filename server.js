@@ -1,0 +1,13 @@
+const express = require('express')
+const { log } = require('node:console')
+const app = express()
+app.get('/home',(req,res)=>{
+    res.send("welcome to the home page");
+})
+app.get('/about',(req,res)=>{
+    res.send("welcome to about page");
+})
+app.listen(3000,()=>{
+    console.log("server is running on your port 3000");
+    
+})
