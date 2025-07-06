@@ -1,6 +1,5 @@
-const express = require('express')
-const { log } = require('node:console')
-const app = express()
+const express = require('express');
+const app = express();
 app.get('/home',(req,res)=>{
     res.send("welcome to the home page");
 })
